@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Blog de comentários</title>  
+    <style>
+        body {background-color: lightcyan;
+        font-family: 'Franklin Gothic Medium';
+        text-align: left;
+        }
+    </style>
+</head>  
+<body>  
+    <h1 style="color:slateblue;"> Blog de comentários</h1>  
+    <p style="color:slategray;">Apresento-lhes um blog inteiramente de comentários. Escreva qualquer coisa para ser salvo para sempre!</p>  
+    <hr>
+    <h3 style="color:slateblue;">Deixe seu comentário:</h3>  
+    <form style="color:slategray;" id="commentForm">  
+        Nome:<br><input type="text" id="name" placeholder="Nome" required /><br><br>  
+        Comentário:<br> <textarea id="comment" placeholder="Comentário" required rows="4"></textarea><br><br>  
+        <button type="submit">Enviar para sempre!</button>  
+    </form>  
+    <hr>
+    <h2 style="color:slateblue;">Comentários:</h2>  
+    <div id="commentsList">  
+    </div>  
+
+    <script>  
+        document.getElementById('commentForm').onsubmit = function(event) {  
+            event.preventDefault();  
+            const name = document.getElementById('name').value;  
+            const comment = document.getElementById('comment').value;  
+
+            // Cria um novo elemento de comentário e adiciona logo abaixo do formulário  
+            const commentElement = document.createElement('div');  
+            commentElement.innerHTML = `<strong>${name}</strong><p>${comment}</p>`;  
+            document.getElementById('commentsList').appendChild(commentElement);  
+
+            // Limpa o formulário  
+            document.getElementById('commentForm').reset();  
+        };  
+    </script>  
+</body>  
+</html>  

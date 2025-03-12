@@ -1,0 +1,81 @@
+<!DOCTYPE html>  
+    <html lang="pt-BR">  
+    <head>  
+        <meta charset="UTF-8">  
+        <title>Galeria de Imagens</title>  
+
+        <style>  
+            body {  
+                font-family:monospace;
+                margin: 0;  
+                padding: 20px;  
+                background-color: aliceblue; 
+            }  
+            header {  
+                text-align: center;  
+                margin-bottom: 20px;  
+            }  
+            .gallery {  
+                display: flex;  
+                justify-content: center; /* Centraliza as imagens */  
+                gap: 15px; 
+            }  
+
+            table {  
+                width: 100%; /* Largura total da tabela */  
+                border-collapse: collapse; /* Remove espaços entre as células */  
+                margin-top: 20px; /* Espaço acima da tabela */  
+            }  
+            th, td {  
+                border: 1px solid #ddd; /* Borda das células */  
+                padding: 12px; /* Espaço interno das células */  
+                text-align: left; /* Alinhamento do texto */  
+            }  
+            th {  
+                background-color: #007BFF; /* Cor de fundo azul para cabeçalho */  
+                color: white; /* Cor do texto do cabeçalho */  
+            }  
+        </style>  
+    </head>  
+    <body>  
+        <header>  
+            <h1>Galeria de Imagens</h1>  
+        </header>  
+
+        <section class="gallery">  
+            <img src="imagem1.jpg" alt="Imagem 1" width="250" height="250" /> 
+            <p>Imagem 1</p>
+            <img src="imagem2.jpg" alt="Imagem 2" width="250" height="250"/> 
+            <p>Imagem 2</p>
+            <img src="imagem3.jpg" alt="Imagem 3" width="250" height="250" />  
+            <p>Imagem 3</p>
+        </section>  
+
+        <table>  
+            <thead><
+                <tr>  
+                    <th>Nome</th>  
+                    <th>Descrição</th>  
+                    <th>Data</th>  
+                </tr>  
+            </thead>  
+            <tbody>  
+                <tr>  
+                    <td>Imagem 1</td>  
+                    <td>Uma bela paisagem ao pôr do sol.</td>  
+                    <td>12 de Março de 2025</td>  
+                </tr>  
+                <tr>  
+                    <td>Imagem 2</td>  
+                    <td>Uma vista deslumbrante da montanha feita por drones.</td>  
+                    <td>15 de Março de 2025</td>  
+                </tr>  
+                <tr>  
+                    <td>Imagem 3</td>  
+                    <td>Uma tranquila praia de areia branca.</td>  
+                    <td>20 de Março de 2025</td>  
+                </tr>  
+            </tbody>  
+        </table>  
+    </body>  
+    </html>  

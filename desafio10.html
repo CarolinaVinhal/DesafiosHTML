@@ -1,0 +1,151 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+    <head>  
+        <meta charset="UTF-8">  
+        <title>Locadora de Filmes</title>  
+        <style>  
+            body {  
+                font-family: Impact,;
+                background-color: aliceblue; 
+                color: #333;  
+                margin: 0;  
+                padding: 20px;  
+            }  
+            header {  
+                text-align: center;  
+                margin-bottom: 20px;  
+            }  
+            h1 {  
+                font-size: 2.5rem;  
+                color: #2c3e50;  
+            }  
+            h2 {  
+                font-size: 2rem;  
+                margin: 10px 0;  
+            }  
+            h3 {  
+                font-size: 1.5rem;  
+                color: #2980b9;  
+            }  
+            h4 {  
+                font-size: 1.2rem;  
+                margin: 10px 0;  
+            }  
+            p {  
+                font-size: 1rem;  
+                margin: 0 0 10px 0;  
+            }  
+            .star {  
+                display: none;  
+            }  
+            .star + label {  
+                font-size: 2rem;  
+                color: gray;  
+                cursor: pointer;  
+                transition: color 0.2s;  
+            }  
+            .star:checked + label {  
+                color: gold;  
+            }  
+            .star:checked ~ .star + label {  
+                color: gold;  
+            }  
+            #star1:checked ~ label {  
+                color: gold;  
+            }  
+            #star1:checked ~ .star + label {  
+                color: gold;  
+            }  
+            #star2:checked ~ #star1 + label,  
+            #star2:checked ~ #star2 + label + #star1,  
+            #star3:checked ~ #star2 + label ~ #star1,  
+            #star3:checked ~ #star3 + label ~ #star2 + label ~ #star1,  
+            #star4:checked ~ #star4 + label ~ #star3 + label ~ #star2 + label ~ #star1,  
+            #star5:checked ~ #star1 + label ~ #star2 + label ~ #star3 + label ~ #star4 + label ~ #star5 {  
+                color: gold;  
+            }  
+
+            /* Estilo adicional para a seção de filmes */  
+            main {  
+                max-width: 800px;  
+                margin: 0 auto;  
+                background: #fff;  
+                padding: 20px;  
+                border-radius: 8px;  
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+            }  
+            iframe {  
+                border-radius: 8px;  
+                margin: 10px 0;  
+            }  
+            fieldset {  
+                margin: 10px 0;  
+                border: none;  
+            }  
+        </style>  
+    </head>  
+    <body>  
+        <header>  
+            <h1>Locadora de Filmes</h1>  
+        </header>  
+        <main>  
+            <section>  
+                <h2>Filmes em Destaque</h2>  
+                
+                <div>  
+                    <h3>Ainda Estou Aqui</h3>  
+                    <p>Emocionante, comovente e inesquecível.Confira o trailer de “Ainda Estou Aqui”, indicado pela Academia Brasileira de Cinema para representar o Brasil 🇧🇷 no Oscar 2025 e dirigido por Walter Salles, vencedor do prêmio de melhor roteiro no 81º Festival de Veneza. .</p>  
+                    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=_NzqP0jmk3o" title="Vídeo do Filme 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                    <div>  
+                        <h4>Classificação:</h4>  
+                        <fieldset>  
+                            <input type="radio" name="rating1" id="star1" class="star" value="1">  
+                            <label for="star1">★</label>  
+                            <input type="radio" name="rating1" id="star2" class="star" value="2">  
+                            <label for="star2">★</label>  
+                            <input type="radio" name="rating1" id="star3" class="star" value="3">  
+                            <label for="star3">★</label>  
+                            <input type="radio" name="rating1" id="star4" class="star" value="4">  
+                            <label for="star4">★</label>  
+                            <input type="radio" name="rating1" id="star5" class="star" value="5">  
+                            <label for="star5">★</label>  
+                        </fieldset>  
+                    </div>  
+                </div>  
+                
+                <div>  
+                    <h3>Como Treinar o Seu Dragão</h3>  
+                    <p></p> O visionário por trás da aclamada trilogia de animação Como Treinar o Seu Dragão, da DreamWorks Animation, Dean DeBlois, três vezes indicado ao Oscar e vencedor do Globo de Ouro, apresenta uma encantadora reimaginação live-action do filme original que lançou a idolatrada franquia. 
+                        
+                        Na acidentada ilha de Berk, onde vikings e dragões são inimigos ferrenhos há gerações, Soluço (Mason Thames, O Telefone Preto, série For All Mankind) se destaca. Filho cheio de imaginação, mas negligenciado, do Chefe Stoico (Gerard Butler, no papel que dublou na franquia animada), Soluço desafia séculos de tradição quando faz amizade com Banguela, um temido dragão Fúria da Noite. Seu vínculo improvável revela a verdadeira natureza dos dragões, desafiando os próprios fundamentos da sociedade viking. 
+                        
+                        Com a feroz e ambiciosa Astrid (Nico Parker, indicada ao BAFTA, Dumbo, série The Last of Us) e o peculiar ferreiro Bocão Bonarroto (Nick Frost, Branca de Neve e o Caçador, Todo Mundo Quase Morto) ao seu lado, Soluço confronta um mundo dilacerado pelo medo e por mal-entendidos. 
+                        
+                        Quando uma antiga ameaça reaparece, colocando em perigo tanto os vikings quanto os dragões, a amizade de Soluço e Banguela se torna a chave para forjar um novo futuro. Juntos, eles devem trilhar o delicado caminho em direção à paz, ultrapassando os limites de seus mundos e redefinindo o que significa ser herói e líder. 
+                        
+                        O filme também é estrelado por Julian Dennison (Deadpool 2), Gabriel Howell (Morte. Morte. Morte.), Bronwyn James (Wicked), Harry Trevaldwyn (Smothered), Ruth Codd (O Clube da Meia-Noite), o indicado ao BAFTA Peter Serafinowicz (Guardiões da Galáxia), e Murray McArthur (série Game of Thrones).
+                        
+                        Como Treinar o Seu Dragão foi escrito, produzido e dirigido por Dean DeBlois, com coprodução de Marc Platt (Wicked, La La Land – Cantando Estações), três vezes indicado ao Oscar, e pelo vencedor do Emmy, Adam Siegel (Drive, Dose Dupla). O filme integra o Programa Filmed for IMAX, que oferece aos cineastas a tecnologia IMAX para ajudá-los a criar a experiência cinematográfica mais imersiva para o público em todo o mundo. 
+                        
+                        Inspirada na série de livros best-seller do “New York Times”, de Cressida Cowell, a franquia Como Treinar o Seu Dragão, da DreamWorks Animation, cativou o público mundial, conquistou quatro indicações ao Oscar, e arrecadou mais de US$ 1,6 bilhão de bilheteria global. Agora, com efeitos visuais de ponta, DeBlois transforma sua adorada saga animada em um espetáculo live-action de tirar o fôlego que dá vida às aventuras épicas de Soluço e Banguela com realismo impressionante, enquanto eles descobrem o verdadeiro significado da amizade, da coragem e do destino.</p>  
+                    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=6QTSPE80Mj8" title="Vídeo do Filme 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                    <div>  
+                        <h4>Classificação:</h4>  
+                        <fieldset>  
+                            <input type="radio" name="rating2" id="star6" class="star" value="1">  
+                            <label for="star6">★</label>  
+                            <input type="radio" name="rating2" id="star7" class="star" value="2">  
+                            <label for="star7">★</label>  
+                            <input type="radio" name="rating2" id="star8" class="star" value="3">  
+                            <label for="star8">★</label>  
+                            <input type="radio" name="rating2" id="star9" class="star" value="4">  
+                            <label for="star9">★</label>  
+                            <input type="radio" name="rating2" id="star10" class="star" value="5">  
+                            <label for="star10">★</label>  
+                        </fieldset>  
+                    </div>  
+                </div>  
+            </section>  
+        </main>  
+    </body>  
+    </html>  

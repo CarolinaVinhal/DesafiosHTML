@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+<title>Portiforio</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: lightcoral;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: lightcyan;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: lightcyan;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: lightcyan;
+  padding: 10px;
+  text-align: center;
+  color: lightcoral;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Portifório</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#C1">Projeto 1</a></li>
+      <li><a href="#C2">Projeto 2</a></li>
+      <li><a href="#C3">Projeto 3</a></li>
+      <li><a href="#C4">Contatos</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 id="C1">Projeto 1 </h1>
+    <img src="home.jpg" alt="" width="250" height="250">
+    <p>Aqui apresentamos uma casa muito bonitaa, feita por um arquiteto X.</p>
+    <p>Com seu design inovador e execelente condições de acessibilidade, é uma moradia ideal para todos os grupos.</p>
+    <hr>
+    <h1 id="C2" >Projeto 2</h1>
+    <img src="apartamento.jpg" alt="" width="250" height="250">
+    <p>Apresento um apartamento muito bonito, feito inteiramente com materiais renovaveis.</p>
+    <p>Além de boa para o meio ambiente, é ideal para todos.</p>
+    <hr>
+    <h1 id="C3">Projeto 3</h1>
+    <img src="ship.jpg" alt="" width="250" height="250">
+    <p>Aqui apresentamos um iate muito chique.</p>
+    <p>Com seu design inovador e execelente condições de acessibilidade, é uma moradia ideal para quem gosta de mar.</p>
+    <hr>
+
+  </article>
+</section>
+
+<footer>
+  <h3 id="C4" >Contatos:</h3>
+  <p>arquitetoX@email.com</p>
+</footer>
+
+</body>
+</html>
